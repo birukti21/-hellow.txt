@@ -1,1 +1,71 @@
 print(hellow)
+import turtle
+# screen=turtle.Screen()
+# turtle.speed(1)
+# turtle.bgcolor("lightblue")
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+
+# turtle.speed(1)
+# turtle.bgcolor("blue")
+# turtle.pencolor("red")
+# turtle.pensize(10)
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+#circle
+# import turtle
+# turtle.speed(1)
+# turtle.circle(100)
+#triangle
+# import turtle
+# turtle.speed(1)
+# turtle.forward(100)
+# turtle.left(90)
+# turtle.forward(100)
+# turtle.right(45)
+# turtle.backward(141.42)
+# begin_fill()
+# for_in_range(4)
+# turtle.forward(100)
+# turtle.left(90)
+# end_fill()
+# import turtle
+
+# # Set up the turtle
+# t = turtle.Turtle()
+# t.speed(1)  # Set the turtle speed
+
+# # Draw a square using a for loop
+# for _ in range(4):
+#     t.forward(100)  # Move the turtle forward by 100 units
+#     t.right(90)     # Turn the turtle right by 90 degrees
+
+# # Finish drawing
+# turtle.done()
+import turtle
+import random
+
+# Set up the screen
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+# Set up the turtle
+t = turtle.Turtle()
+t.speed(0)  # Fastest speed
+t.width(2)
+
+# Function to draw a mandala pattern
+def draw_mandala(t, size, repetitions):
+    colors = ["red", "yellow", "blue", "green", "orange", "purple", "pink"]
+    for i in range(repetitions):
+        t.color(random.choice(colors))
+        t.circle(size)
+        t.left(360 / repetitions)
+
+# Draw the mandala
+draw_mandala(t, 100, 36)
+
+# Finish drawing
+turtle.done()
